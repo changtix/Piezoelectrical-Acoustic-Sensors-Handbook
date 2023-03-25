@@ -17,4 +17,4 @@ introducing the displacement potential scalar $\psi$, and velocity vector $\bold
 | ------------- | ------------- |
 | $$\frac{\partial^2 \psi}{\partial t^2} = c^2\nabla^2 \psi$$ | $$\frac{\partial^2 \psi}{\partial t^2} = c^2\frac{\partial^2 \psi}{\partial x^2}$$ |
 
-[ ref ](https://edisciplinas.usp.br/pluginfile.php/4983673/mod_resource/content/0/Fundamentals%20of%20Acoustics%204ed-Cap5.pdf) <br/>
+[ Ch5. THE ACOUSTIC WAVE EQUATION AND SIMPLE SOLUTIONS ](https://edisciplinas.usp.br/pluginfile.php/4983673/mod_resource/content/0/Fundamentals%20of%20Acoustics%204ed-Cap5.pdf) <br/>
