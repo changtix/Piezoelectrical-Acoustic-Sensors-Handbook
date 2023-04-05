@@ -4,8 +4,11 @@
 ## System Model
 True state at time _k_, $\mathbf{x}\_k$, evolved from the state at time (_k-1_), $\mathbf{x}\_{k-1}$: $\mathbf{x}\_k = \mathbf{F}\_k \mathbf{x}\_{k-1} + \mathbf{B}\_k \mathbf{u}\_{k} + \mathbf{w}\_k$ </br>
 At time $k$ an observation (or measurement) $\mathbf{z}\_k$ of the true state $\mathbf{x}\_k$ is made according to: $\mathbf{z}\_k = \mathbf{H}\_k \mathbf{x}\_k + \mathbf{v}\_k$ </br>
- &ensp; $\mathbf{F}\_k$: state transition matrix
- &ensp; 
+ &ensp; $\mathbf{F}\_k$: state transition matrix </br>
+ &ensp; $\mathbf{B}\_k$: control matrix </br>
+ &ensp; $\mathbf{w}\_k$: model uncertainty, assumed to be drawn from a zero mean multivariate normal distribution with corvariance $\mathbf{Q}\_k$, $\mathbf{w}\_k &sim; \mathcal{N}(0, \mathbf{Q}\_k)$ </br>
+ &ensp; $\mathbf{H}\_k$: measurement matrix </br>
+ &ensp; $\mathbf{v}\_k$: measurement noise, assumed to be drawn from a zero mean multivariate normal distribution with corvariance $\mathbf{R}\_k$, $\mathbf{v}\_k &sim; \mathcal{N}(0, \mathbf{R}\_k)$ </br>
 
 ## Algorithm
 **Predict** </br>
