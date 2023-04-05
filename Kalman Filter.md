@@ -30,3 +30,5 @@ Note </br>
 
 source for the equations: [Wikipedia: Kalman filter](https://en.wikipedia.org/wiki/Kalman_filter)</br>
 additional reference: [Mithi, Sensor Fusion and Object Tracking using an Extended Kalman Filter Algorithm — Part 1 ](https://medium.com/@mithi/object-tracking-and-fusing-sensor-measurements-using-the-extended-kalman-filter-algorithm-part-1-f2158ef1e4f0) </br>
+interpretation of KF from Baysian perspective: [WTF is Sensor Fusion? The good old Kalman filter](https://towardsdatascience.com/wtf-is-sensor-fusion-part-2-the-good-old-kalman-filter-3642f321440) </br>
+explanation of KF with an example: [How a Kalman filter works, in pictures](https://www.bzarg.com/p/how-a-kalman-filter-works-in-pictures/) </br>
