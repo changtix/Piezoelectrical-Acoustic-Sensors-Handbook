@@ -10,3 +10,4 @@ source for the equations: [Mithi, Sensor Fusion and Object Tracking using an Ext
  &ensp; Optimal Kalman Gain: $\mathbf{K}\_k = \mathbf{P}\_{k|k-1} \mathbf{H}\_{k}^T \mathbf{S}\_{k}^{-1}$</br>
  &ensp; Updated (a posteriori) state estimate: $\mathbf{\hat x}\_{k|k} = \mathbf{\hat x}\_{k|k-1} + \mathbf{K}\_k \mathbf{\tilde{y}}\_k$</br>
  &ensp; Updated (a posteriori) estimate covariance: $\mathbf{P}\_{k|k} = (\mathbf{I} - \mathbf{K}\_k \mathbf{H}\_{k})\mathbf{P}\_{k|k-1}$</br>
+![kalman filter flow](https://en.wikipedia.org/wiki/Kalman_filter#/media/File:Basic_concept_of_Kalman_filtering.svg)
