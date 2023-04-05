@@ -11,6 +11,10 @@ At time $k$ an observation (or measurement) $\mathbf{z}\_k$ of the true state $\
  &ensp; $\mathbf{v}\_k$: measurement noise, assumed to be drawn from a zero mean multivariate normal distribution with corvariance $\mathbf{R}\_k$, $\mathbf{v}\_k &sim; \mathcal{N}(0, \mathbf{R}\_k)$ </br>
 
 ## Algorithm
+**Initialize**</br>
+ &ensp; $\mathbf{\hat x}\_{0|0} = \mathbb{E}(\mathbf{H^{&dagger;}z}\_{0})$, where $\mathbf{H^{&dagger;}}$ is pseudo-inverse</br>
+ &ensp; $\mathbf{P}\_{0|0} = \mathbf{Q}\_0$ </br>
+ &ensp; For many cases: it is reasonable to initialize  $\mathbf{\hat x}\_{0|0} = \mathbf{0}$ and $\mathbf{P}\_{0|0} = \mathbf{0}$ </br>
 **Predict** </br>
  &ensp; Predict (a priori) state estimate: $\mathbf{\hat x}\_{k|k-1} = \mathbf{F}\_{k} \mathbf{\hat{x}}\_{k-1|k-1} + \mathbf{B}\_{k} \mathbf{u}\_{k}$ </br>
  &ensp; Predict (a priori) state estimate coveriance: $\mathbf{P}\_{k|k-1} = \mathbf{F}\_{k} \mathbf{P}\_{k-1|k-1} \mathbf{F}\_{k}^T + \mathbf{Q}\_{k}$ </br>
@@ -20,6 +24,9 @@ At time $k$ an observation (or measurement) $\mathbf{z}\_k$ of the true state $\
  &ensp; Optimal Kalman Gain: $\mathbf{K}\_k = \mathbf{P}\_{k|k-1} \mathbf{H}\_{k}^T \mathbf{S}\_{k}^{-1}$</br>
  &ensp; Updated (a posteriori) state estimate: $\mathbf{\hat x}\_{k|k} = \mathbf{\hat x}\_{k|k-1} + \mathbf{K}\_k \mathbf{\tilde{y}}\_k$</br>
  &ensp; Updated (a posteriori) estimate covariance: $\mathbf{P}\_{k|k} = (\mathbf{I} - \mathbf{K}\_k \mathbf{H}\_{k})\mathbf{P}\_{k|k-1}$</br>
+Note </br>
+ &ensp; $\mathbf{P}\_{k|k} = cov(\mathbf{x}\_{k} - \mathbf{\hat x}\_{k|k})$ </br>
+ &ensp; Without control input, $\mathbf{B}\_{k} \mathbf{u}\_{k} = \mathbf{0}$
 
 source for the equations: [Wikipedia: Kalman filter](https://en.wikipedia.org/wiki/Kalman_filter)</br>
 additional reference: [Mithi, Sensor Fusion and Object Tracking using an Extended Kalman Filter Algorithm — Part 1 ](https://medium.com/@mithi/object-tracking-and-fusing-sensor-measurements-using-the-extended-kalman-filter-algorithm-part-1-f2158ef1e4f0) </br>
