@@ -35,3 +35,5 @@ explanation of KF with an example: [How a Kalman filter works, in pictures](http
 
 # IMU Sensor Fusion
 [reference](https://nitinjsanket.github.io/tutorials/attitudeest/mahony.html)</br>
+[AHRS python package](https://ahrs.readthedocs.io/en/latest/installation.html)</br>
+[Open Source IMU and AHRS Algos](https://x-io.co.uk/open-source-imu-and-ahrs-algorithms/)</br>
